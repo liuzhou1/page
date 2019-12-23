@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>分页</title>
+		<link href="css/page.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container">
+			<div id="barcon" name="barcon" class="page"></div>
+		</div>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+		<script src="js/page.js"></script>
+		<script>
+            var total_page = 5;
+            var totalCount = 100;
+            var pageSize = 20;
+            var currentPage=1;
+            var pageDate={
+                   obj_box:'.page',//翻页容器
+                   total_item:totalCount,//条目总数
+                   per_num:pageSize,//每页条目数
+                   current_page:currentPage//当前页
+                   };
+             page_ctrl(pageDate);
+		</script>
+	</body>
+</html>
